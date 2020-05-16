@@ -7,7 +7,7 @@ Tudo isso para que ao final do Bootcamp o aluno possa estar apto a desenvolver e
 <hr>
 
 <p align="center">
-  <img width="800px src="https://github.com/sabrinaconceicao/bootcamp-fullstack-igti/blob/master/igti.png?raw=true" />
+  <img width="800px" src="https://github.com/sabrinaconceicao/bootcamp-fullstack-igti/blob/master/igti.png?raw=true" />
 </p>
 
 ## Linguagens, ferramentas e tecnologias trabalhadas: :computer:

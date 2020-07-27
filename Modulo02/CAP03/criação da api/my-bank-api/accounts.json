@@ -1,0 +1,8 @@
+{
+  "nextId": 6,
+  "accounts": [
+    { "id": 1, "name": "José Freitas da Silva", "balance": 1000 },
+    { "id": 2, "name": "José Freitas da Silva", "balance": 28 },
+    { "id": 4, "name": "Bernardo da Silva", "balance": 200 }
+  ]
+}

@@ -1,0 +1,54 @@
+2020-06-07T19:14:35.972Z [my-bank-api] info: API started!
+2020-06-07T19:16:50.137Z [my-bank-api] info: API started!
+2020-06-07T19:17:24.130Z [my-bank-api] info: API started!
+2020-06-07T19:17:43.409Z [my-bank-api] info: API started!
+2020-06-07T19:18:11.366Z [my-bank-api] info: API started!
+2020-06-07T19:18:38.072Z [my-bank-api] info: API started!
+2020-06-07T19:19:21.716Z [my-bank-api] info: POST /account - {"id":4,"name":"Bernardo da Silva","balance":200}
+2020-06-07T19:19:22.594Z [my-bank-api] info: API started!
+2020-06-07T19:21:07.439Z [my-bank-api] info: API started!
+2020-06-07T19:21:37.631Z [my-bank-api] info: API started!
+2020-06-07T19:22:05.999Z [my-bank-api] info: API started!
+2020-06-07T19:22:48.426Z [my-bank-api] info: API started!
+2020-06-07T19:23:15.060Z [my-bank-api] info: API started!
+2020-06-07T19:25:03.985Z [my-bank-api] info: API started!
+2020-06-07T19:25:28.865Z [my-bank-api] info: API started!
+2020-06-07T19:26:07.014Z [my-bank-api] info: API started!
+2020-06-07T19:41:28.899Z [my-bank-api] info: API started!
+2020-06-07T19:42:00.440Z [my-bank-api] info: API started!
+2020-06-07T19:42:49.168Z [my-bank-api] info: API started!
+2020-06-07T19:43:11.929Z [my-bank-api] info: API started!
+2020-06-07T19:43:34.828Z [my-bank-api] info: API started!
+2020-06-07T19:44:17.033Z [my-bank-api] info: POST /account
+2020-06-07T19:44:34.678Z [my-bank-api] info: POST /account - {"id":5,"name":"Bernardo ","balance":200}
+2020-06-07T19:44:35.451Z [my-bank-api] info: API started!
+2020-06-07T19:44:41.897Z [my-bank-api] info: POST /account
+2020-06-07T19:44:54.779Z [my-bank-api] error: DELETE /account/:id - 5
+2020-06-07T19:44:55.592Z [my-bank-api] info: API started!
+2020-06-07T19:44:57.934Z [my-bank-api] info: POST /account
+2020-06-07T19:45:09.277Z [my-bank-api] info: GET /account/:id - {"id":1,"name":"José Freitas da Silva","balance":200}
+2020-06-07T19:45:31.675Z [my-bank-api] error: PUT /account - {"id":1,"name":"José Freitas da Silva","balance":1000}
+2020-06-07T19:45:32.464Z [my-bank-api] info: API started!
+2020-06-07T19:45:41.053Z [my-bank-api] info: GET /account/:id - {"id":1,"name":"José Freitas da Silva","balance":1000}
+2020-06-07T19:45:49.772Z [my-bank-api] error: TRANSACTION /account/transaction - {}
+2020-06-07T19:45:50.687Z [my-bank-api] info: API started!
+2020-06-07T19:45:53.025Z [my-bank-api] error: TRANSACTION /account/transaction - {}
+2020-06-07T19:45:53.778Z [my-bank-api] info: API started!
+2020-06-07T19:46:56.217Z [my-bank-api] info: API started!
+2020-06-07T20:16:35.935Z [my-bank-api] info: API started!
+2020-06-07T20:17:53.018Z [my-bank-api] info: POST /account
+2020-06-07T20:21:11.601Z [my-bank-api] info: API started!
+2020-06-07T20:21:58.233Z [my-bank-api] info: POST /account
+2020-06-07T20:22:04.185Z [my-bank-api] info: GET /account/:id - {"id":1,"name":"José Freitas da Silva","balance":1000}
+2020-06-07T20:22:31.586Z [my-bank-api] info: API started!
+2020-06-07T20:22:39.074Z [my-bank-api] info: API started!
+2020-06-07T20:37:20.842Z [my-bank-api] info: GET /account/:id - {"id":1,"name":"José Freitas da Silva","balance":1000}
+2020-06-07T20:42:42.208Z [my-bank-api] info: API started!
+2020-06-07T20:42:44.597Z [my-bank-api] info: API started!
+2020-06-07T20:46:05.930Z [my-bank-api] info: API started!
+2020-06-07T20:48:35.186Z [my-bank-api] info: API started!
+2020-06-07T20:50:27.693Z [my-bank-api] info: POST /account
+2020-06-07T21:04:53.680Z [my-bank-api] info: API started!
+2020-06-07T21:07:07.552Z [my-bank-api] info: GET /account/:id - {"id":1,"name":"José Freitas da Silva","balance":1000}
+2020-06-07T21:07:38.441Z [my-bank-api] info: API started!
+2020-06-07T21:07:42.406Z [my-bank-api] info: GET /account/:id - {"id":1,"name":"José Freitas da Silva","balance":1000}

@@ -1,0 +1,34 @@
+
+git init (Inicializa o versionamento do projeto)
+
+git add * (Transfere todos os arquivos para a area temporaria)
+
+git add -A (Transfere todos os arquivos de uma extensao especifica para o index)
+
+git add *.js (Transfere todos os arquivos de uma extensão especifica para o index)
+
+git commit 
+
+git commit -m "Mensagem do commmit"
+
+git status (Visualiza arquivos na area temporaria)
+
+gitk (Visualização gráfica do historico)
+
+git checkout "Nome Branck"
+
+git checkout -b "Novo Branch" (Cria um novo branch)
+
+git branch (Visualiza os branches no repositorio local e qual sera e qual esta em uso)
+
+git logs (Visualiza logs de commit do branch atual)
+
+git branch -d (Exclui um branch)
+
+git remote add origin "endereço do git remoto" (adicionando repositorio remoto ao meu repositorio)
+
+git push -u origin master
+
+git pull (transfere as alterações locais do branch atual para o repositorio remoto)
+
+git fetch (atualiza os branches locais dos branches remotos)

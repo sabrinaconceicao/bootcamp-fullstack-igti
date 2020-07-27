@@ -1,0 +1,7 @@
+2020-05-31T18:17:44.941Z [grades-control-api] error: Error log
+2020-05-31T18:17:44.943Z [grades-control-api] warn: Warn log
+2020-05-31T18:17:44.945Z [grades-control-api] info: Info lIg
+2020-05-31T18:17:44.954Z [grades-control-api] verbose: Verbose log
+2020-05-31T18:17:44.956Z [grades-control-api] debug: Debug log
+2020-05-31T18:17:44.957Z [grades-control-api] silly: Silly log
+2020-05-31T18:17:44.958Z [grades-control-api] info:  Hello with parameter!

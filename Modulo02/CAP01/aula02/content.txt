@@ -1,0 +1,4 @@
+
+- Explicação sobre o que é API.
+
+- Explicação sobre REST.

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Color's Editor</h2>
+      <form>
+        <div class="div-R">
+          <label for="colorR">(R) Red:</label>
+          <input type="range" id="colorR" value="0" min="0" max="255" />
+          <input type="text" value="0" id="valueR" disabled />
+        </div>
+
+        <div class="div-G">
+          <label for="colorG">(G) Green:</label>
+          <input type="range" id="colorG" value="0" min="0" max="255" />
+          <input type="text" value="0" id="valueG" disabled />
+        </div>
+
+        <div id="div-B">
+          <label for="colorB">(B) Blue:</label>
+          <input type="range" id="colorB" value="0" min="0" max="255" />
+          <input type="text" value="0" id="valueB" disabled />
+        </div>
+      </form>
+
+      <div class="square"></div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,147 @@
+
+-- Contextualização do MongoDB
+
+-- Instalação do MongoDB
+
+             ------ CODIGOS ------
+
+
+
+     -- CREATE --
+
+// inserir varios objects
+db.student.insertMany([{ dados: "", ...}])
+
+// inserir um so object
+db.student.insertOne({ dados: ""})
+
+
+
+
+     -- RETRIEVE --
+
+-- no query vc procura o seu objeto, por exemplo filtrar so pelas
+pessoas que gostam de Quimica, e dai no projection vc 
+filtra o que quer mostrar dessas pessoas que gotam de quimica.
+
+--- exemplo--
+// filtrar quem gosta de quimica e mostrar tudo menos o id
+db.student.find({subject:"Quimica"}, {_id:0}).pretty()
+
+-- no projection pode colocar os campos que quer mostrar,
+ como um filtro, se colocar = 1 mostra, se colocar = 0 não mostra
+
+-- db.student.find(query, projection)
+
+//trazer o primeiro registro de tudo
+-- db.student.findOne(query, projection)
+
+// limitar a quantidade trazida
+-- db.student.find(query, projection).limit (n)
+
+//pular a quantidade de registros inseridade
+-- db.student.find(query, projection).skip(n) 
+
+// = 1 mudar a order para crescente e -1 decrescente, ao inves da ordem inserida
+-- db.student.find(query, projection).sort({fieldA:1, field:-1})
+
+//ajusta para visualizar melhor quando tem mta informação
+-- db.student.find(query, projection).pretty()
+
+
+
+--- OPERADOR LÓGICOS ---
+    -- como usar --
+
+// funciona como E mesmo
+$and:[{subject:"Quimica"}, {type: "Prova Final"}]
+
+$not //nega
+
+// traz todos os documentos que nao atendem ao o que vc 
+traz ali dentro
+$nor:[{subject:"Quimica"}, {type: "Prova Final"}]
+
+// funciona como OU mesmo
+$or:[{subject:"Quimica"}, {subject:"Matematica"}]
+
+
+
+--- OPERADOR DE COMPARAÇÃO ---
+       -- como usar --
+
+//igual que 
+$eq
+
+//maior que
+exemplo: value maior que 20
+db.student.find({value: {$gt:20}}, {_id:0}).pretty()
+$gt
+
+//maior que ou igual
+$gte
+
+//dentro de
+exemplo:tudo que tenha quimica ou matematica
+db.student.find({subject: 
+{$in: ["Quimica", "Matematica"]}}, {_id:0}).pretty()
+$in
+
+//menor que
+$lt
+
+//menor ou igual
+$lte
+
+// acho que nao igual
+$ne
+
+//nao pertence
+$nin
+
+
+
+
+     -- UPDATE --
+
+query = filtro pra achar a pessoa que vc quer mudar
+
+update = o que quer mudar
+--exemplo--
+$Operador:{type:"Prova Final"}
+
+//$set é Operador de atualização
+//$inc incrementa a partir do object que ja se tem (faz +)
+//$currentDate data e hora
+//$unset Operador de remoção
+
+db.student.updateOne(query,update,options) pega um so 
+    ou 
+updateMany que pega varios
+    ou
+replaceOne que substitui todo um documento por um novo
+
+
+
+     -- DELETE --
+--exemplos--
+
+//deletar um, o primeiro que ele encontrar
+db.student.deleteOne({_id: ObjectId("5ef8b1d538ff1947d85552e1")})
+
+//deletar mais de um
+db.student.deleteMany({subject:"Fisica"})
+
+
+      -- AGREGAÇÃO -- 
+
+existe o aggregate, o distinct, o count e o countDocuments 
+(mesma coisa que o count mas com mais precissao em caso de mtos dados)
+
+-- o count mostra a quantidade que tem daquilo que vc ta 
+procurando como um filtro
+
+-- ja o aggregate mostra aquilo que vc ta procurando 
+na tela  como um filtro
+
+-- tem tambem o distinct que pega os valores distintos
